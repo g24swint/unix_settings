@@ -1,0 +1,7 @@
+echo "Sync ssh"
+cd ~
+rsync /mnt/c/Users/swint/.ssh ~/.ssh
+cd ~/.ssh
+chmod go-wx .ssh/id_rsa* .ssh/config
+chmod go-wx *.pem
+
