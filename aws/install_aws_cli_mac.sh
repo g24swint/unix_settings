@@ -48,7 +48,7 @@ echo "============================================================"
 echo ""
 
 read -rp "Do you want to configure credentials now? [y/N]: " configure
-if [[ "${configure,,}" == "y" ]]; then
+if [[ "$configure" == "y" || "$configure" == "Y" ]]; then
   aws configure
   echo ""
   echo "Credentials saved to ~/.aws/credentials"
